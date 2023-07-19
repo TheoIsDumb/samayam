@@ -1,0 +1,21 @@
+{
+  "description": "Displays time and date at the top.",
+  "manifest_version": 2,
+  "name": "Samayam",
+  "version": "1.0",
+  "homepage_url": "https://github.com/theoisdumb/samayam",
+  "icons": {
+    "48": "48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["samayam.js"]
+    }
+  ],
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "blah@blah.com"
+  }
+}
+}
